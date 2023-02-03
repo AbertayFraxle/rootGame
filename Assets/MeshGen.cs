@@ -6,12 +6,25 @@ using UnityEngine;
 public class MeshGen : MonoBehaviour
 {
     //init vars
+    // the length of segment (world space)
     public float SegmentLength = 5;
+
+    // the segment resolution (number of horizontal points)
     public int SegmentResolution = 32;
+
+    // the size of meshes in the pool
     public int MeshCount = 4;
+
+    // the maximum number of visible meshes. Should be lower or equal than MeshCount
     public int VisibleMeshes = 4;
+
+    // the prefab including MeshFilter and MeshRenderer
     public MeshFilter SegmentPrefab;
+
+    // helper array to generate new segment without further allocations
     private Vector3[] _vertexArray;
+
+    // the pool of free mesh filters
     private List<MeshFilter> _freeMeshFilters = new List<MeshFilter>();
     private List<Segment> _usedSegments = new List<Segment>();
 
