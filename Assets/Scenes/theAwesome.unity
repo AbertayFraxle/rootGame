@@ -936,6 +936,10 @@ PrefabInstance:
       propertyPath: m_UseLimits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1657144513574736730, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1657144513636612743, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: m_UseLimits
       value: 0
@@ -943,6 +947,10 @@ PrefabInstance:
     - target: {fileID: 1657144513690781127, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: m_Mass
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657144513690781127, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1657144513736108081, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: m_UseLimits
@@ -1026,7 +1034,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4517674554639882940, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: springDist
-      value: 20
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []

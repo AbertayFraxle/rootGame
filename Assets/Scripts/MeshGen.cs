@@ -71,12 +71,12 @@ public class MeshGen : MonoBehaviour
 
             filter.gameObject.SetActive(false);
             _freeMeshFilters.Add(filter);
-        }
+        }   
     }
     
     private float getHeight(float position)
     {
-        return ((Mathf.Sin(position - 10f) + 1.5f + Mathf.Sin(position * 1.75f) + 1f) / steepness);//the important bit callum look here callum this is the bit callum look callum
+        return ((Mathf.Sin(position+10.0f) + 1.5f + Mathf.Sin(position * 1.75f) + 10f) / steepness);//the important bit callum look here callum this is the bit callum look callum
     }
 
     public void GenerateSegment(int index, ref Mesh mesh)
