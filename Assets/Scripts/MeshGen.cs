@@ -6,6 +6,9 @@ using UnityEngine;
 public class MeshGen : MonoBehaviour
 {
     //init vars
+
+    public GameObject ground;
+
     // the length of segment (world space)
     public float SegmentLength = 5;
 
@@ -78,7 +81,7 @@ public class MeshGen : MonoBehaviour
     
     private float getHeight(float position)
     {
-        return ((Mathf.Cos(position+100.0f) + 1.5f + Mathf.Sin(position * 1.75f) + 150f) / steepness);//the important bit callum look here callum this is the bit callum look callum
+        return ((Mathf.Sin(position + 100.0f) + 1.5f + Mathf.Sin(position * 1.75f) + 150f) / steepness);//the important bit callum look here callum this is the bit callum look callum
     }
 
     public void GenerateSegment(int index, ref Mesh mesh)
@@ -88,7 +91,7 @@ public class MeshGen : MonoBehaviour
 
         for(int i = 0; i < SegmentResolution;i++)
         {
-            float xPos = step * i;
+            float xPos = 2 * step * i;
             float yPosTop = getHeight(startPosition+xPos); //MUST be ABSOLUTE number
             _vertexArray[i * 2] = new Vector3(xPos, yPosTop,0);//z is 0 cause its not heremight make it vector2 later
 
