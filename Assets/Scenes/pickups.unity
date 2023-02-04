@@ -137,8 +137,8 @@ GameObject:
   - component: {fileID: 147889012}
   - component: {fileID: 147889013}
   m_Layer: 0
-  m_Name: Circle (1)
-  m_TagString: gas
+  m_Name: Water
+  m_TagString: water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -254,6 +254,53 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!1 &218258050
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 218258052}
+  - component: {fileID: 218258051}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &218258051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218258050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2aeafd5f209d35a40a080664f68c2a96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sun: {fileID: 638576409}
+  gas: {fileID: 1079281381}
+  water: {fileID: 147889008}
+--- !u!4 &218258052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218258050}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.8851098, y: 1.0244564, z: 0.12686896}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &382691500
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +318,7 @@ GameObject:
   - component: {fileID: 382691507}
   - component: {fileID: 382691508}
   m_Layer: 0
-  m_Name: Circle (3)
+  m_Name: testPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,7 +518,7 @@ GameObject:
   - component: {fileID: 638576410}
   - component: {fileID: 638576414}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: Sun
   m_TagString: sun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -602,8 +649,8 @@ GameObject:
   - component: {fileID: 1079281385}
   - component: {fileID: 1079281386}
   m_Layer: 0
-  m_Name: Circle (2)
-  m_TagString: water
+  m_Name: Gas
+  m_TagString: gas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
