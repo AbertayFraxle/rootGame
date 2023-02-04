@@ -821,6 +821,22 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1066361879, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Size.x
+      value: 6.634597
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066361879, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Size.y
+      value: 5.0002513
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066361879, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.065160275
+      objectReference: {fileID: 0}
+    - target: {fileID: 1066361879, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.5335684
+      objectReference: {fileID: 0}
     - target: {fileID: 1657144512645315446, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: m_UseLimits
       value: 0
@@ -868,6 +884,14 @@ PrefabInstance:
     - target: {fileID: 1657144513636612743, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: m_UseLimits
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657144513690781127, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1657144513690781127, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1657144513736108081, guid: 12cc9eaceb0d0ef4e8ccd4c3a3772119, type: 3}
       propertyPath: m_UseLimits
