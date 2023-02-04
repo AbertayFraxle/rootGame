@@ -20,6 +20,12 @@ public class TreeController : MonoBehaviour
     //holds the keys for extending roots 1-5
     [SerializeField] private List<KeyCode> rootKeys;
 
+    //public as pickups will use this too
+    public void playTreeSound(int id)
+    {
+        audioScr.PlayOneShot(playerSfx[id]);
+    }
+
     private void Update()
     {
         if (main.GetComponent<pickupManager>().isSunMode())
@@ -38,7 +44,7 @@ public class TreeController : MonoBehaviour
             //if key gets pressed, play corrisponding sfx (each of the 5 roots has a different sfx)
             if (Input.GetKeyDown(rootKeys[i]))
             {
-                audioScr.PlayOneShot(playerSfx[i]);
+                playTreeSound(i);
             }
         }
     }
