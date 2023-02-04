@@ -2423,6 +2423,7 @@ GameObject:
   - component: {fileID: 1705986434}
   - component: {fileID: 1705986430}
   - component: {fileID: 1705986431}
+  - component: {fileID: 827822752}
   m_Layer: 0
   m_Name: BOTTOM
   m_TagString: Untagged
@@ -2545,6 +2546,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sunLimit: 5
   maxJumps: 2
+--- !u!114 &827822752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862069234049404390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc06f874d057b484989ccade15c15957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpStrength: 500
+  brain: {fileID: 1862069234049404390}
 --- !u!1 &1862069234141842280
 GameObject:
   m_ObjectHideFlags: 0
