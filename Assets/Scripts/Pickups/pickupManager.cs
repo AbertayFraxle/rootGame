@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class pickupManager : MonoBehaviour
 {
+    [SerializeField] public TreeController treeCon;
+
     bool sun;
     float sunTimer;
 
@@ -59,6 +61,7 @@ public class pickupManager : MonoBehaviour
                     case "sun":
                         //trigger a super-powered mode for 5 seconds
                         sun = true;
+                        treeCon.playTreeSound(7);
                         print("sun object hit");
                         break;
                     case "gas":
@@ -67,10 +70,12 @@ public class pickupManager : MonoBehaviour
                         {
                             jumps++;
                         }
+                        treeCon.playTreeSound(8);
                         print("gas canister collected");
                         break;
                     case "water":
                         this.GetComponent<livesManager>().addLife();
+                        treeCon.playTreeSound(6);
                         print("water collected");
                         break;
                 }
