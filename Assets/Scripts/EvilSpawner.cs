@@ -9,7 +9,7 @@ public class EvilSpawner : MonoBehaviour
 {
     float spawnTimer;
 
-    public GameObject sun, gas, water;
+    public GameObject rock, campfire, mystery;
 
     GameObject currentSpawn;
 
@@ -35,18 +35,18 @@ public class EvilSpawner : MonoBehaviour
         {
             if (currPoint >= nextPoint)
             {
-                int spawnChance = Random.Range(0, 3);
+                int spawnChance = Random.Range(0, 2);
 
                 switch (spawnChance)
                 {
                     case 0:
-                        currentSpawn = sun;
+                        currentSpawn = rock;
                         break;
                     case 1:
-                        currentSpawn = gas;
+                        currentSpawn = campfire;
                         break;
                     case 2:
-                        currentSpawn = water;
+                        currentSpawn = mystery;
                         break;
                 }
                 Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, 0.5f, Camera.main.nearClipPlane));

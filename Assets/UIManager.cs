@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public int distance;
+
+    public GameObject player;
+    [SerializeField] private int distance;
     public List<Image> distanceNos;
     public List<Sprite> numberSprites;
     public GameObject gameUI;
@@ -17,7 +19,7 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      
     }
 
     void updateDistanceCounter()
@@ -66,6 +68,8 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        distance = (int)player.transform.position.x ;
+
         updateDistanceCounter();
 
         if (Input.GetKeyDown("escape"))
