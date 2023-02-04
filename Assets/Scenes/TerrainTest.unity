@@ -394,10 +394,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4619751d198a34d4f82c5c770147d14e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SegmentLength: 5
+  SegmentLength: 10
   SegmentResolution: 32
-  MeshCount: 4
-  VisibleMeshes: 4
+  MeshCount: 8
+  VisibleMeshes: 8
   SegmentPrefab: {fileID: 3765167496578884499, guid: 879650569a6896044ab58895d25e423a, type: 3}
 --- !u!4 &2000617698
 Transform:

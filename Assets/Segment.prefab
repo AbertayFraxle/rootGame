@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3765167496578884498}
   - component: {fileID: 3765167496578884499}
   - component: {fileID: 3765167496578884500}
-  - component: {fileID: 3765167496578884501}
   - component: {fileID: -3178601558728074782}
   m_Layer: 0
   m_Name: Segment
@@ -85,23 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3765167496578884501
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3765167496578884502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4619751d198a34d4f82c5c770147d14e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SegmentLength: 5
-  SegmentResolution: 32
-  MeshCount: 4
-  VisibleMeshes: 4
-  SegmentPrefab: {fileID: 0}
 --- !u!114 &-3178601558728074782
 MonoBehaviour:
   m_ObjectHideFlags: 0
