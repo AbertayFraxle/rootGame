@@ -11,6 +11,7 @@ public class livesManager : MonoBehaviour
     public float maxInvuln = 1;
 
     [SerializeField] GameObject root;
+    [SerializeField] UIManager uiMan;
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +31,7 @@ public class livesManager : MonoBehaviour
         if (lives <= 0)
         {
             //game over
-            Destroy(root);
+            uiMan.showGameOverScreen();
             print("player has died");
             
         }

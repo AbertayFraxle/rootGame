@@ -7,14 +7,18 @@ using UnityEngine.SceneManagement;
 public class UIManager : MonoBehaviour
 {
 
-    public GameObject player;
+    [SerializeField] private GameObject player;
     [SerializeField] private int distance;
-    public List<Image> distanceNos;
-    public List<Sprite> numberSprites;
-    public GameObject gameUI;
-    public GameObject pauseScreen;
+    [SerializeField] private List<Image> distanceNos;
+    [SerializeField] private List<Sprite> numberSprites;
+    [SerializeField] private GameObject gameUI;
+    [SerializeField] private GameObject pauseScreen;
+    [SerializeField] private GameObject gameOverScreen;
+
+    public List<GameObject> gameOverMenus;
 
     bool pauseState = false;
+    bool gameOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,6 +47,25 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void showGameOverScreen()
+    {
+        if (!gameOver)
+        {
+            gameOver = true;
+            gameOverScreen.SetActive(true);
+
+            pauseScreen.SetActive(false);
+            gameUI.SetActive(false);
+        }
+    }
+
+    public void setGameOverMenu(int id)
+    {
+        for (int i = 0; i < gameOverMenus.Count; i++)
+        {
+            gameOverMenus[i].SetActive(i == id);
+        }
+    }
     public void setPauseState(bool open)
     {
         pauseState = open;
@@ -60,6 +83,11 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void playAgain()
+    {
+        print("[RELOAD SCENE] - i don't know the final scene name yet...");
+    }
+
     public void quitToTitle()
     {
         SceneManager.LoadScene("TitleScreen");
@@ -72,7 +100,7 @@ public class UIManager : MonoBehaviour
 
         updateDistanceCounter();
 
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape") && !gameOver)
         {
             setPauseState(!pauseState);
         }
