@@ -647,57 +647,9 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 454381930, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.8830018
-      objectReference: {fileID: 0}
-    - target: {fileID: 454381930, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.00400003
-      objectReference: {fileID: 0}
-    - target: {fileID: 1705986430, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: root
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069232887320531, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069232903162420, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069232917259281, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069232922558381, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 0.7936588
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069232922558381, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.0000006332992
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069233177980703, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069233255565836, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 1.4159118
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069233255565836, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.0000014305115
-      objectReference: {fileID: 0}
     - target: {fileID: 1862069233272268107, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
       propertyPath: m_Name
       value: Gretchen 2.0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069233272268108, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_Bounds.m_Extent.y
-      value: 8.501831
       objectReference: {fileID: 0}
     - target: {fileID: 1862069233272268110, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
       propertyPath: m_RootOrder
@@ -743,81 +695,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1862069233962595551, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234201953252, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234281796500, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 1.4692316
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234281796500, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: -0.00000017881393
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234456124457, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234687024730, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234724205281, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234765186309, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234798307650, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234826866857, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 1.5203928
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234826866857, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 0.0000009536744
-      objectReference: {fileID: 0}
-    - target: {fileID: 1862069234827904207, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-      propertyPath: m_TagString
-      value: leaf
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
---- !u!1 &827822742 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1862069234049404390, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
-  m_PrefabInstance: {fileID: 827822740}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &827822751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1862069234049404391, guid: 46a219e08a91a7247af05994eecc9515, type: 3}
   m_PrefabInstance: {fileID: 827822740}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &827822752
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827822742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc06f874d057b484989ccade15c15957, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpStrength: 500
-  brain: {fileID: 827822742}
 --- !u!114 &1140321923 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1384635338534840647, guid: b06828c72b5ece842b2eed4c2f2130c0, type: 3}

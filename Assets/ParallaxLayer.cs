@@ -14,7 +14,7 @@ public class ParallaxLayer : MonoBehaviour
     public bool infiniteY;
 
     int offsetX = 0;
-    int offsetY = 0;
+    int offsetY = 1;
 
     // Start is called before the first frame update
     void Start()
