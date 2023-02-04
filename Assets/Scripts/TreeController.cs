@@ -10,10 +10,21 @@ public class TreeController : MonoBehaviour
     [SerializeField] private SpringJoint2D rootJoint5;
     
     //this controls the distance of the spring. The force the leg sprung up. 
-    [SerializeField] private float springDist = 200f;
+    [SerializeField] private float springDist = 50f;
+
+    [SerializeField] public GameObject main;
 
     private void Update()
     {
+        if (main.GetComponent<pickupManager>().isSunMode())
+        {
+            springDist = 100f;
+        }
+        else
+        {
+            springDist = 50f;
+        }
+
         rootJoint1.distance = Input.GetKey(KeyCode.Q) ? springDist : 0;
         rootJoint2.distance = Input.GetKey(KeyCode.W) ? springDist : 0;
         rootJoint3.distance = Input.GetKey(KeyCode.Space) ? springDist : 0;

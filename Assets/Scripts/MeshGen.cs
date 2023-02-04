@@ -31,6 +31,8 @@ public class MeshGen : MonoBehaviour
     //bigger teh steepness the less steep it is it makes sense
     public float steepness = 7.0f;
 
+    private float goUp = 0;
+
     void Awake()
     {
         _vertexArray = new Vector3[SegmentResolution*2];
@@ -76,7 +78,7 @@ public class MeshGen : MonoBehaviour
     
     private float getHeight(float position)
     {
-        return ((Mathf.Sin(position+10.0f) + 1.5f + Mathf.Sin(position * 1.75f) + 10f) / steepness);//the important bit callum look here callum this is the bit callum look callum
+        return ((Mathf.Cos(position+100.0f) + 1.5f + Mathf.Sin(position * 1.75f) + 150f) / steepness);//the important bit callum look here callum this is the bit callum look callum
     }
 
     public void GenerateSegment(int index, ref Mesh mesh)
@@ -97,6 +99,8 @@ public class MeshGen : MonoBehaviour
         mesh.vertices = _vertexArray;
 
         mesh.RecalculateBounds();
+
+        goUp += 1;
     }
     
     private bool IsSegmentInSight(int index)

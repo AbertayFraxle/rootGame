@@ -49,7 +49,7 @@ public class pickupManager : MonoBehaviour
 
         if (picked)
         {
-            Destroy(other.gameObject);
+            
 
             if (!picked.isPicked())
             {
@@ -75,6 +75,7 @@ public class pickupManager : MonoBehaviour
                         break;
                 }
             }
+            Destroy(other.gameObject);
         }
         
     }
@@ -92,7 +93,7 @@ public class pickupManager : MonoBehaviour
 
     public bool tryJump()
     {
-        if (jumps < 0)
+        if (jumps > 0)
         {
             jumps--;
             return true;
