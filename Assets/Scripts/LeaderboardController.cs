@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using LootLocker.Requests;
-
+using TMPro;
 
 public class LeaderboardController : MonoBehaviour
 {
-    public InputField nickname;
+    public TMP_InputField nickname;
+    public TextMeshProUGUI scoreDisplay;
     [SerializeField]private GameObject player;
     public string ID;
     private int score;
 
     private void Start()
     {
-        LootLockerSDKManager.StartSession("Player", (response) =>
+        LootLockerSDKManager.StartGuestSession((response) =>
         {
             if (response.success)
             {
@@ -25,6 +26,12 @@ public class LeaderboardController : MonoBehaviour
                 print("failed");
             }
         });
+    }
+
+    private void Update()
+    {
+        score = (int)player.transform.position.x;
+        scoreDisplay.text = score.ToString();
     }
 
     public void SubmitScore()
