@@ -44,6 +44,12 @@ public class livesManager : MonoBehaviour
         }
     }
 
+    public int getLife()
+    {
+        return lives;
+    }
+
+
     private void OnTriggerStay2D(Collider2D other)
     {
         if (other.tag == "fire")
