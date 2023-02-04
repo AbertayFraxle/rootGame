@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using LootLocker.Requests;
+
 using TMPro;
 
 public class LeaderboardController : MonoBehaviour
@@ -15,17 +15,7 @@ public class LeaderboardController : MonoBehaviour
 
     private void Start()
     {
-        LootLockerSDKManager.StartGuestSession((response) =>
-        {
-            if (response.success)
-            {
-                print("success");
-            }
-            else
-            {
-                print("failed");
-            }
-        });
+
     }
 
     private void Update()
@@ -38,16 +28,6 @@ public class LeaderboardController : MonoBehaviour
     {
         score = (int)player.transform.position.x;
 
-        LootLockerSDKManager.SubmitScore(nickname.text, score, ID, (response) =>
-        {
-            if (response.success)
-            {
-                print("success");
-            }
-            else
-            {
-                print("failed");
-            }
-        });
+
     }
 }
