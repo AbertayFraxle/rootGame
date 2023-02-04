@@ -15,6 +15,7 @@ public class pickupSpawner : MonoBehaviour
 
     float nextPoint;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,6 @@ public class pickupSpawner : MonoBehaviour
 
         float currPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, 0, 0)).x;
 
-        
 
         if (spawnTimer <= 0)
         {
@@ -49,12 +49,11 @@ public class pickupSpawner : MonoBehaviour
                         currentSpawn = water;
                         break;
                 }
-                Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, Random.Range(0.5f, 0.9f), 0));
+                Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, Random.Range(0.5f, 0.9f), Camera.main.nearClipPlane));
 
-                GameObject spawned = Instantiate(currentSpawn);
-                spawned.transform.position = new Vector2(spawnPoint.x, spawnPoint.y);
+                GameObject spawned = Instantiate(currentSpawn, new Vector3(spawnPoint.x, spawnPoint.y, 0),new Quaternion());
 
-                nextPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.6f, 0, 0)).x;
+                nextPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.6f, 0, Camera.main.nearClipPlane)).x;
 
             }
 
@@ -65,4 +64,8 @@ public class pickupSpawner : MonoBehaviour
 
 
     }
+
 }
+
+
+
