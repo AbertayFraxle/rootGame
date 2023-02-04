@@ -28,6 +28,9 @@ public class MeshGen : MonoBehaviour
     private List<MeshFilter> _freeMeshFilters = new List<MeshFilter>();
     private List<Segment> _usedSegments = new List<Segment>();
 
+    //bigger teh steepness the less steep it is it makes sense
+    public float steepness = 7.0f;
+
     void Awake()
     {
         _vertexArray = new Vector3[SegmentResolution*2];
@@ -73,7 +76,7 @@ public class MeshGen : MonoBehaviour
     
     private float getHeight(float position)
     {
-        return (Mathf.Sin(position) + 1.5f + Mathf.Sin(position * 1.75f) + 1f) / 7f;//the important bit callum look here callum this is teh bit callum look callum
+        return (Mathf.Sin(position) + 1.5f + Mathf.Sin(position * 1.75f) + 1f) / steepness;//the important bit callum look here callum this is the bit callum look callum
     }
 
     public void GenerateSegment(int index, ref Mesh mesh)
