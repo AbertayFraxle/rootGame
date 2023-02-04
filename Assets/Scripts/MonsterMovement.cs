@@ -24,7 +24,7 @@ public class MonsterMovement : MonoBehaviour
 
     private float GetScreenWidthInWorldDistance()
     {
-        return Camera.main.orthographicSize * Camera.main.aspect * 4;
+        return Camera.main.orthographicSize * Camera.main.aspect * 3;
     }
     
     private void TeleportBack()
