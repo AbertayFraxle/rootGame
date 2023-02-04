@@ -519,6 +519,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1862069234049404391, guid: bd69dd73d16116b438ac2ea99d4d7f5c, type: 3}
   m_PrefabInstance: {fileID: 1862069234387506936}
   m_PrefabAsset: {fileID: 0}
+--- !u!50 &342563616 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 1862069234049404376, guid: bd69dd73d16116b438ac2ea99d4d7f5c, type: 3}
+  m_PrefabInstance: {fileID: 1862069234387506936}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1140321923 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1384635338534840647, guid: b06828c72b5ece842b2eed4c2f2130c0, type: 3}
@@ -827,6 +832,14 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 299531095, guid: bd69dd73d16116b438ac2ea99d4d7f5c, type: 3}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 342563616}
+    - target: {fileID: 731079067, guid: bd69dd73d16116b438ac2ea99d4d7f5c, type: 3}
+      propertyPath: m_ConnectedRigidBody
+      value: 
+      objectReference: {fileID: 342563616}
     - target: {fileID: 1862069233272268107, guid: bd69dd73d16116b438ac2ea99d4d7f5c, type: 3}
       propertyPath: m_Name
       value: Gretchen 2.0
