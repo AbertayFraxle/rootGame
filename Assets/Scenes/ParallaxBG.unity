@@ -541,8 +541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   divider: 2
-  offsetWidth: 96
-  offsetHeight: 10
+  offsetWidth: 19.2
+  offsetHeight: 10.8
   infiniteY: 1
 --- !u!1 &1475589578
 GameObject:
