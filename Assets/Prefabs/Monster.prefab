@@ -4827,7 +4827,7 @@ GameObject:
   - component: {fileID: 352316803}
   m_Layer: 0
   m_Name: Chainsaw
-  m_TagString: fire
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4883,6 +4883,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &5496741805835208267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4924,7 +4925,7 @@ Transform:
   - {fileID: 5496741806955090627}
   - {fileID: 5496741806645563948}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.48}
 --- !u!212 &5496741805835208270
 SpriteRenderer:
@@ -5004,8 +5005,8 @@ MonoBehaviour:
   - {fileID: 5496741806955090627}
   - {fileID: 5496741806645563948}
   m_Bounds:
-    m_Center: {x: -0.5682616, y: -0.6147356, z: 0}
-    m_Extent: {x: 3.739297, y: 2.298647, z: 0}
+    m_Center: {x: -0.56826115, y: -0.6147351, z: 0}
+    m_Extent: {x: 3.739295, y: 2.298647, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -5041,7 +5042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83dfff85e5861474e810bddf6cb14e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
   player: {fileID: 0}
 --- !u!82 &290127809
 AudioSource:

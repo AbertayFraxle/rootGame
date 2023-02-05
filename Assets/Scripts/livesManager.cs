@@ -50,6 +50,10 @@ public class livesManager : MonoBehaviour
         return lives;
     }
 
+    public void rootDeath()
+    {
+        lives = 0;
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
