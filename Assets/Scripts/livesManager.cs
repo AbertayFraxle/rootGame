@@ -32,7 +32,6 @@ public class livesManager : MonoBehaviour
         {
             //game over
             uiMan.showGameOverScreen();
-            print("player has died");
             
         }
     }
