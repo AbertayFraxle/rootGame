@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3543486817804030873
 MonoBehaviour:
@@ -47,3 +47,4 @@ MonoBehaviour:
   sun: {fileID: 4663330508269855026, guid: a80f46b6b76df6741b0e50056dd5acc6, type: 3}
   gas: {fileID: 772184385753946295, guid: 6ef00b8b5dd43ae47b767046a72463a0, type: 3}
   water: {fileID: 3405046388753345637, guid: 6c312967f60836e44a2fb2b3e3b3a996, type: 3}
+  boost: {fileID: 4663330508269855026, guid: e9b81067f5392f24db39ad1f7170d090, type: 3}
