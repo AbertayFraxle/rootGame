@@ -8,6 +8,9 @@ public class pickupManager : MonoBehaviour
 {
     [SerializeField] public TreeController treeCon;
 
+    //mario
+    [SerializeField] public jumpManager jumpMan;
+
     bool sun;
     float sunTimer;
 
@@ -77,6 +80,11 @@ public class pickupManager : MonoBehaviour
                         this.GetComponent<livesManager>().addLife();
                         treeCon.playTreeSound(6);
                         print("water collected");
+                        break;
+                    case "boost":
+                        jumpMan.doBoost();
+                        treeCon.playTreeSound(9);
+                        print("boost collected");
                         break;
                 }
             }
