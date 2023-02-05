@@ -1264,7 +1264,7 @@ Transform:
   m_Children:
   - {fileID: 1862069234049404391}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1862069233272268109
 SpriteRenderer:
@@ -1409,6 +1409,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 6a662cdcdf178c24b8a56b2235805844, type: 3}
   - {fileID: 8300000, guid: 1eab02c136805f04f8a27e16d8299220, type: 3}
   - {fileID: 8300000, guid: 2cbb581e77dd8074db9b1aea1b58fce8, type: 3}
+  - {fileID: 8300000, guid: ee69aee15147b714eb0d83d86a6781d6, type: 3}
   rootKeys: 7100000077000000200000006f00000070000000
 --- !u!82 &5688509028555256511
 AudioSource:
@@ -2804,6 +2805,7 @@ MonoBehaviour:
   maxInvuln: 1
   root: {fileID: 1862069233272268107}
   uiMan: {fileID: 0}
+  causeOfDeath: 0
 --- !u!114 &1705986431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2817,6 +2819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   treeCon: {fileID: 1862069233272268111}
+  jumpMan: {fileID: 827822752}
   sunLimit: 15
   maxJumps: 2
 --- !u!114 &827822752
