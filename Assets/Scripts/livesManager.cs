@@ -50,6 +50,10 @@ public class livesManager : MonoBehaviour
         return lives;
     }
 
+    public void rootDeath()
+    {
+        lives = 0;
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
@@ -59,8 +63,8 @@ public class livesManager : MonoBehaviour
             {
                 if (invuln <= 0)
                 {
-                  //  lives--;
-                    ScreenShake.Instance.ShakeCamera(5f,1f);
+                    lives--;
+                    ScreenShake.Instance.ShakeCamera(10f,0.2f);
                     invuln = maxInvuln;
                 }
             }

@@ -9,7 +9,7 @@ public class TitleManager : MonoBehaviour
 
     public void startGame()
     {
-        SceneManager.LoadScene("TitleScreen");
+        SceneManager.LoadScene("TestScene");
     }
 
     public void settingsPanelState(bool open)

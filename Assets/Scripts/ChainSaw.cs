@@ -10,16 +10,22 @@ public class ChainSaw : MonoBehaviour
     
     [SerializeField] private List<GameObject> legs;
 
+    [SerializeField] private GameObject player;
+
+    private livesManager livesMan;
+
     private bool isWaiting;
 
     private void Start()
     {
        particle.SetActive(false);
        isWaiting = false;
+        livesMan = player.GetComponent<livesManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        ScreenShake.Instance.ShakeCamera(10f, 0.2f);
         if (col.CompareTag("Player"))
         {
             particle.SetActive(true);
@@ -36,6 +42,14 @@ public class ChainSaw : MonoBehaviour
         {
             particle.SetActive(false);
         } 
+    }
+
+    private void Update()
+    {
+        if (legs.Count <= 0)
+        {
+            livesMan.rootDeath();
+        }
     }
 
     /// <summary>
