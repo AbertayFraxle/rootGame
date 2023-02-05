@@ -4374,10 +4374,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 352316803, guid: 114b798f5501e5243872bda6d2d44060, type: 3}
-      propertyPath: legs.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 352316803, guid: 114b798f5501e5243872bda6d2d44060, type: 3}
       propertyPath: legs.Array.data[0]
       value: 
       objectReference: {fileID: 144971292}
