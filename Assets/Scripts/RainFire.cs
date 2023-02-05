@@ -24,8 +24,14 @@ public class RainFire : MonoBehaviour
         cubeSize.x = cubeTrans.localScale.x * bc.size.x;
         cubeSize.y = cubeTrans.localScale.y * bc.size.y;
     }
- 
- 
+
+
+    private void Update()
+    {
+        Transform cubeTrans = bc.GetComponent<Transform>();
+        cubeCenter = cubeTrans.position;
+    }
+
     private void Start()
     {
         StartCoroutine(SpawnFire());
