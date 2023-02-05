@@ -14,11 +14,14 @@ public class livesManager : MonoBehaviour
     [SerializeField] GameObject root;
     [SerializeField] UIManager uiMan;
 
+    public int causeOfDeath;
+
     // Start is called before the first frame update
     void Start()
     {
         lives = maxLives;
         invuln = 0;
+        causeOfDeath = 0;
     }
 
     // Update is called once per frame
@@ -53,6 +56,7 @@ public class livesManager : MonoBehaviour
     public void rootDeath()
     {
         lives = 0;
+        causeOfDeath = 1;
     }
 
     private void OnTriggerStay2D(Collider2D other)
