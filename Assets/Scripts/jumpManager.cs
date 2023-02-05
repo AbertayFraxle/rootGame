@@ -17,6 +17,13 @@ public class jumpManager : MonoBehaviour
         controller = root.GetComponent<TreeController>();
     }
 
+    public void doBoost()
+    {
+        //activates once boost powerup is collected
+        this.GetComponent<Rigidbody2D>().AddForce((Vector2.up * 2 + Vector2.right) * 500, ForceMode2D.Impulse);
+        controller.playTreeSound(5);
+    }
+
     // Update is called once per frame
     void Update()
     {

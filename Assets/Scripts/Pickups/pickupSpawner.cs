@@ -9,7 +9,7 @@ public class pickupSpawner : MonoBehaviour
 
     float spawnTimer;
 
-    public GameObject sun, gas, water;
+    public GameObject sun, gas, water, boost;
 
     GameObject currentSpawn;
 
@@ -35,7 +35,7 @@ public class pickupSpawner : MonoBehaviour
         {
             if (currPoint >= nextPoint)
             {
-                int spawnChance = Random.Range(0, 3);
+                int spawnChance = Random.Range(0, 4);
 
                 switch (spawnChance)
                 {
@@ -47,6 +47,9 @@ public class pickupSpawner : MonoBehaviour
                         break;
                     case 2:
                         currentSpawn = water;
+                        break;
+                    case 3:
+                        currentSpawn = boost;
                         break;
                 }
                 Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, Random.Range(0.5f, 0.9f), Camera.main.nearClipPlane));
