@@ -56,9 +56,9 @@ public class EvilSpawner : MonoBehaviour
                 Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, 0.5f, Camera.main.nearClipPlane));
 
 
-                GameObject spawned = Instantiate(currentSpawn, new Vector3(spawnPoint.x, height, 0), new Quaternion());
+                GameObject spawned = Instantiate(currentSpawn, new Vector3(spawnPoint.x, height, 10.0f), new Quaternion());
 
-                nextPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.6f, 0, Camera.main.nearClipPlane)).x;
+                nextPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.6f, 0.0f, Camera.main.nearClipPlane)).x;
 
             }
 
