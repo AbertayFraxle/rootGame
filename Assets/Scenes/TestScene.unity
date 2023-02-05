@@ -149,6 +149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 47897921}
   - component: {fileID: 47897920}
+  - component: {fileID: 47897922}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -210,6 +211,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &47897922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47897919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2988f822bc292394c89e9b2b095f6ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &74223381 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 74223381, guid: 12611b19032469e4486e855ce6fdd090, type: 3}
@@ -628,6 +641,7 @@ GameObject:
   - component: {fileID: 276352169}
   - component: {fileID: 276352168}
   - component: {fileID: 276352167}
+  - component: {fileID: 276352170}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -711,6 +725,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &276352170
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276352165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 0
+  m_FrequencyGain: 5
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &308946259
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,6 +1800,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 352316803, guid: 114b798f5501e5243872bda6d2d44060, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1029456390}
+    - target: {fileID: 352316803, guid: 114b798f5501e5243872bda6d2d44060, type: 3}
       propertyPath: legs.Array.data[0]
       value: 
       objectReference: {fileID: 778241885}
@@ -1790,7 +1825,7 @@ PrefabInstance:
       objectReference: {fileID: 482411941}
     - target: {fileID: 5496741805777867888, guid: 114b798f5501e5243872bda6d2d44060, type: 3}
       propertyPath: m_TagString
-      value: fire
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5496741805835208240, guid: 114b798f5501e5243872bda6d2d44060, type: 3}
       propertyPath: speed
