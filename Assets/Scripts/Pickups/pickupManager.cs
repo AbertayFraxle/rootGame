@@ -8,8 +8,13 @@ public class pickupManager : MonoBehaviour
 {
     [SerializeField] public TreeController treeCon;
 
+    [SerializeField] public GameObject root;
+
     //mario
     [SerializeField] public jumpManager jumpMan;
+
+    [SerializeField] public Material normal;
+    [SerializeField] public Material super;
 
     bool sun;
     float sunTimer;
@@ -17,7 +22,7 @@ public class pickupManager : MonoBehaviour
     public float sunLimit = 5;
 
     public int maxJumps = 2;
-    int jumps;
+    public int jumps;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +42,17 @@ public class pickupManager : MonoBehaviour
         }
         else if (sunTimer > 0)
         {
+            root.GetComponent<SpriteRenderer>().material = super;
+
             sunTimer -= Time.deltaTime;
             if (sunTimer <= 0)
             {
                 print("sun effect ended");
             }
+        }
+        else
+        {
+            root.GetComponent<SpriteRenderer>().material = normal;
         }
 
        

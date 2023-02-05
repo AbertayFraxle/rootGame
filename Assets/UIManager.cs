@@ -85,7 +85,7 @@ public class UIManager : MonoBehaviour
 
     public void playAgain()
     {
-        print("[RELOAD SCENE] - i don't know the final scene name yet...");
+        SceneManager.LoadScene("TestScene");
     }
 
     public void quitToTitle()
