@@ -4925,7 +4925,7 @@ Transform:
   - {fileID: 5496741806955090627}
   - {fileID: 5496741806645563948}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.48}
 --- !u!212 &5496741805835208270
 SpriteRenderer:
@@ -5054,7 +5054,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: f17f6c882ae06d54f85516eec020ef4c, type: 2}
-  m_audioClip: {fileID: 8300000, guid: b564c049db13c184ab68a3a8fca41c07, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 75e7a94287920c4478f56dedb0b2b956, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
