@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
-using UnityEditor.ShaderGraph.Drawing;
 using UnityEngine;
 
 public class pickupManager : MonoBehaviour
