@@ -20,10 +20,17 @@ public class TreeController : MonoBehaviour
     //holds the keys for extending roots 1-5
     [SerializeField] private List<KeyCode> rootKeys;
 
+    private livesManager lManager;
+
     //public as pickups will use this too
     public void playTreeSound(int id)
     {
         audioScr.PlayOneShot(playerSfx[id]);
+    }
+
+    private void Start()
+    {
+        lManager = main.GetComponent<livesManager>();
     }
 
     private void Update()
@@ -37,14 +44,18 @@ public class TreeController : MonoBehaviour
             currentDist = springDist;
         }
 
-        for (int i = 0; i < rootKeys.Count; i++)
+        if (lManager.lives > 0)
         {
-            rootJoints[i].distance = Input.GetKey(rootKeys[i]) ? springDist : 0;
 
-            //if key gets pressed, play corrisponding sfx (each of the 5 roots has a different sfx)
-            if (Input.GetKeyDown(rootKeys[i]))
+            for (int i = 0; i < rootKeys.Count; i++)
             {
-                playTreeSound(i);
+                rootJoints[i].distance = Input.GetKey(rootKeys[i]) ? springDist : 0;
+
+                //if key gets pressed, play corrisponding sfx (each of the 5 roots has a different sfx)
+                if (Input.GetKeyDown(rootKeys[i]))
+                {
+                    playTreeSound(i);
+                }
             }
         }
     }

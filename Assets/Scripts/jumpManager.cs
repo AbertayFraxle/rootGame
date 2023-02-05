@@ -7,11 +7,14 @@ public class jumpManager : MonoBehaviour
 
     [SerializeField] private float jumpStrength = 500;
     [SerializeField] private GameObject brain;
+    [SerializeField] private GameObject root;
+
+    TreeController controller;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        controller = root.GetComponent<TreeController>();
     }
 
     // Update is called once per frame
@@ -21,6 +24,7 @@ public class jumpManager : MonoBehaviour
           if (brain.GetComponent<pickupManager>().tryJump())
             {
                 this.GetComponent<Rigidbody2D>().AddForce(Vector2.up*jumpStrength,ForceMode2D.Impulse);
+                controller.playTreeSound(5);
             }
         }
     }
