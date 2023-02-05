@@ -25,6 +25,7 @@ public class ChainSaw : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D col)
     {
+        ScreenShake.Instance.ShakeCamera(10f, 0.2f);
         if (col.CompareTag("Player"))
         {
             particle.SetActive(true);
