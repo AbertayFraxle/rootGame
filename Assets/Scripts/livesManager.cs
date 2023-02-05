@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using Cinemachine;
 
 public class livesManager : MonoBehaviour
 {
@@ -58,8 +59,8 @@ public class livesManager : MonoBehaviour
             {
                 if (invuln <= 0)
                 {
-                    print("you are burning");
-                    lives--;
+                  //  lives--;
+                    ScreenShake.Instance.ShakeCamera(5f,1f);
                     invuln = maxInvuln;
                 }
             }
