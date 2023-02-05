@@ -9,6 +9,8 @@ public class EvilSpawner : MonoBehaviour
 {
     float spawnTimer;
 
+    float height;
+
     public GameObject rock, campfire, mystery;
 
     GameObject currentSpawn;
@@ -41,9 +43,11 @@ public class EvilSpawner : MonoBehaviour
                 {
                     case 0:
                         currentSpawn = rock;
+                        height = 15f;
                         break;
                     case 1:
                         currentSpawn = campfire;
+                        height = 16f;
                         break;
                     case 2:
                         currentSpawn = mystery;
@@ -52,7 +56,7 @@ public class EvilSpawner : MonoBehaviour
                 Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.1f, 0.5f, Camera.main.nearClipPlane));
 
 
-                GameObject spawned = Instantiate(currentSpawn, new Vector3(spawnPoint.x, 15.0f, 0), new Quaternion());
+                GameObject spawned = Instantiate(currentSpawn, new Vector3(spawnPoint.x, height, 0), new Quaternion());
 
                 nextPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.6f, 0, Camera.main.nearClipPlane)).x;
 
